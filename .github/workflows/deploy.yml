@@ -1,0 +1,31 @@
+
+name: Deploy Node.js Application to EC2
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Deploy to EC2
+        uses: appleboy/ssh-action@v1.2.0
+        with:
+          host: ${{ secrets.EC2_IP }}
+          username: ${{ secrets.EC2_OP }}
+          key: ${{ secrets.EC2_SSH_KEY }}
+          script: |
+            cd ~/code-to-cloud
+            git pull origin main
+            npm install --omit=dev
+
+            if pm2 describe code-to-cloud >/dev/null 2>&1; then
+              pm2 restart code-to-cloud
+            else
+              pm2 start server.js --name code-to-cloud
+            fi
+
+            pm2 save
