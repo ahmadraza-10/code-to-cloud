@@ -1,0 +1,150 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 100px;
+    background: #f4f4f4;
+}
+
+h1 {
+    color: #2563eb;
+}
+
+p {
+    color: #555;
+}
+
+
+        body {
+            background: #f8fafc;
+            color: #1e293b;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            background: #ffffff;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .brand {
+            color: #2563eb !important;
+            font-weight: 800;
+            font-size: 24px;
+        }
+
+        .nav-link {
+            color: #475569 !important;
+            font-weight: 500;
+        }
+
+        .nav-link:hover {
+            color: #2563eb !important;
+        }
+
+        .hero {
+            padding: 100px 0 90px;
+            text-align: center;
+            background: linear-gradient(135deg, #9dcbea, #ffffff, #b7e0fb);
+        }
+
+        .hero h1 {
+            font-size: 58px;
+            font-weight: 800;
+            color: #0f172a;
+        }
+
+        .gradient-text {
+            color: #2563eb;
+        }
+
+        .hero p {
+            color: #64748b;
+            max-width: 680px;
+            margin: 20px auto;
+            line-height: 1.8;
+        }
+
+        .custom-btn {
+            background: #2563eb;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 8px;
+        }
+
+        .custom-btn:hover {
+            background: #1d4ed8;
+            color: white;
+        }
+
+        .section-title {
+            font-weight: 750;
+            color: #0f172a;
+            margin-bottom: 40px;
+        }
+
+        .dashboard-card {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 14px;
+            padding: 28px;
+            height: 100%;
+            box-shadow: 0 4px 15px rgba(15, 23, 42, 0.03);
+            transition: 0.3s;
+        }
+
+        .dashboard-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(37, 99, 235, 0.09);
+            border-color: #bfdbfe;
+        }
+
+        .card-icon {
+            font-size: 32px;
+            color: #2563eb;
+            margin-bottom: 18px;
+        }
+
+        .muted {
+            color: #64748b;
+        }
+
+        .status {
+            color: #16a34a;
+            font-weight: 700;
+        }
+
+        .pipeline-icon {
+            width: 68px;
+            height: 68px;
+            background: #eff6ff;
+            border: 1px solid #dbeafe;
+            border-radius: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto auto 18px;
+            font-size: 27px;
+            color: #2563eb;
+        }
+
+        .pipeline-step {
+            text-align: center;
+        }
+
+        .footer {
+            background: #ffffff;
+            border-top: 1px solid #e2e8f0;
+            padding: 30px 0;
+            color: #64748b;
+        }
+
+        .tech-section {
+            background: #eff6ff;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 39px;
+            }
+        }
+    
